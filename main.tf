@@ -6,6 +6,12 @@ terraform {
       version = "~> 3.44.0"
     }
   }
+  cloud {
+    organization = "mantycora"
+    workspaces {
+      name = "Lab3-Ansible"
+    }
+  }
 
   required_version = ">= 0.15.5"
 }
